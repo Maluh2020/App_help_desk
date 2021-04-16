@@ -1,8 +1,6 @@
 <?php 
 
-	echo "<pre>";
-	print_r($_POST);
-	echo "</pre>";
+	session_start();
 
 	//formatar o array em uma estrutura de texto
 	$titulo = str_replace('#', '-', $_POST['titulo']);
@@ -11,7 +9,7 @@
 
 	//implode('#', $_POST) implode transforma um array em uma string
 
-	$texto = $titulo. '#' . $categoria. '#' . $descricao . PHP_EOL;
+	$texto = $_SESSION['id']. '#' . $titulo. '#' . $categoria. '#' . $descricao . PHP_EOL;
 
 
 	//a extensão pode ser txt pq é texto puro, o parametro 'a' abre o arquivo para escrita

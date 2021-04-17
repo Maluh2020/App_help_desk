@@ -14,7 +14,7 @@
 
 	//a extensão pode ser txt pq é texto puro, o parametro 'a' abre o arquivo para escrita
 	//abrindo arquivo
-	$arquivo = fopen('arquivo.hd', 'a');
+	$arquivo = fopen('../../app_help_desk/arquivo.hd', 'a');
 
 	//escrevendo o texto
 	fwrite($arquivo, $texto);

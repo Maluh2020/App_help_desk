@@ -8,7 +8,7 @@
   echo $_SESSION['perfil_id'];
 
 //abrir o arquivo, o parametro 'r' indica que é para leitura
-  $arquivo = fopen('C:\xampp\htdocs\app_help_desk/arquivo.hd', 'r');
+  $arquivo = fopen('../../app_help_desk/arquivo.hd', 'r');
 
   //percorrer o arquivo.hd enquanto houver registros a serem recuperados
   while (!feof($arquivo)) {
